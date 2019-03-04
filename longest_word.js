@@ -15,4 +15,3 @@ const LongestWord = (sen) => {
 
 console.log(LongestWord('How are you today?????'));
 console.log(LongestWord('How are you today????? what about yesterday?!'));
-
