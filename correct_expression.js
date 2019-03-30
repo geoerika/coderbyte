@@ -5,7 +5,7 @@ function SimpleSymbols(str) {
   let bool = true;
     for (let i = 0; i < str.length; i++) {
         if (str.charAt(i).match(/[a-zA-Z]/)) {
-            if (str.charAt(i - 1) !== '+' || str.charAt(i + 1) !== '+') {
+            if ( i === 0 || str.charAt(i - 1) !== '+' || str.charAt(i + 1) !== '+') {
               bool = false;
             }
         }
@@ -14,4 +14,8 @@ function SimpleSymbols(str) {
 
 }
 
+console.log(SimpleSymbols("b+=3+g+"))
 console.log(SimpleSymbols("+b+=3+g+"))
+console.log(SimpleSymbols("b+=3g+"))
+console.log(SimpleSymbols("+b+=3+g"))
+
