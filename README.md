@@ -1,2 +1,2 @@
-# coderbyte problems
+# coderbyte JavaScript problems
 
